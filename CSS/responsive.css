@@ -1,0 +1,81 @@
+
+/* Responsive design */
+
+/* Medium Screen (Tablet) */
+@media screen and (max-width: 950px){
+  .first-navigation{
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+
+  .community-signup-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .community{
+    width: 95%;
+  }
+  .community img{
+    display: block;
+    margin: 20px auto 0 auto;
+  }
+  .community h2{
+    text-align: center;
+  }
+
+  .signup-container{
+    width: 90%;
+    margin: auto;
+  }
+
+}
+/* Small Screen (Mobile) */
+@media screen and (max-width: 700px){
+  .first-navigation{
+    flex-direction: column;
+    padding: 10px 10px;
+    align-items: unset;
+    
+  }
+
+  .menu-container{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu{
+    display: block;
+    font-size: 2.5em;
+  }
+  .login-container{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    display: none;
+  }
+
+  .login-container .login-button{
+    position: initial;
+    padding: 10px;
+    width: 100%;
+  }
+  .appear{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .appear .login-button{
+    position: initial;
+    padding: 5px;
+    width: 100%;
+  } 
+
+  .community img{
+    width: 350px;
+  }
+}
+

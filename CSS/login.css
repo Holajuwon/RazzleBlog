@@ -1,0 +1,237 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ font-size: 100%;
+ font: inherit;
+ vertical-align: baseline;
+ box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, img {
+ display: block;
+}
+body {
+ line-height: 1;
+}
+ol, ul {
+ list-style: none;
+}
+blockquote, q {
+ quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+ content: '';
+ content: none;
+}
+table {
+ border-collapse: collapse;
+ border-spacing: 0;
+}
+
+#links:hover {
+ background: "fff"
+}
+input{
+  outline: none;
+}
+/* My code => let'sCode */
+/* Header */
+body{
+  background-color: #e9ebee;
+}
+
+.main-header{
+  background-image: url('../asset/contact-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+.overlay{
+  background-color: rgba(33, 103, 88, 0.9);  /*background color, strictly for styling*/
+  width: 100%;
+}
+/* Navigation */
+.first-navigation{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  width: 100%;
+}
+/* Name of Blog */
+.menu{
+  display: none;
+}
+.name{    
+  font-size: 2.5em;
+  font-weight: 800;  
+}
+
+/* Login Navigation */
+.login-container{
+  display: flex;
+}
+
+.login-container div{  /*div's in login container*/
+  margin-left: 8px;
+}
+
+.login-container p{  /*all p's in login container*/
+  margin: 8px 0;
+}
+
+.login-container .forget{ /*forg0t password*/
+  color: #e8f0fe;
+  text-decoration: none;
+  opacity: 0.8;
+}
+.login-container .forget:hover{ /*forgot password*/
+  text-decoration: underline;
+}
+.login-container input{  /*Login inputs*/
+  background: #e8f0fe;
+  padding: 3px 3px 4px;
+}
+
+.login-container .login-button{   /* Login button*/ 
+  display: inline;
+  position: relative;
+  top: 32px;
+  padding: 4px 3px 5px;
+  border-radius: 3px;
+  background-color:rgb(224, 247, 246);
+  color: #008181;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid;
+}
+
+
+.login-container .login-button:hover{
+  color: #fff;
+  animation-name: hover-color;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes hover-color{
+	100%{
+		background-color: #008181;
+	}
+}
+
+.community-signup-container{  /*Container for community and sign up */
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0 20px 0;
+  width: 100%;
+  height: auto;
+}
+
+.community h2{
+font-size: 1.3em;
+margin-bottom: 10px;
+color: #008181;
+}
+
+.signup-container{
+  font-size: 18px;
+}
+.signup-container .create{
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.signup-container h3{
+  margin-bottom: 10px;
+}
+
+.input-name input{
+  padding: 5px;
+  margin-right: 3px;
+  margin-bottom: 10px;
+  border: 0.5px solid #008181;
+  border-radius: 3px;
+  width: 40%;
+  height: 30px;
+}
+
+.signup-container p{
+  color: #90949c;
+  margin-bottom: 5px;
+}
+
+.input-password input{
+  padding: 5px;
+  margin-right: 3px;
+  margin-bottom: 10px;
+  border: 0.5px solid #008181;
+  border-radius: 3px;
+  width: 82%;
+  height: 30px;
+}
+.signup-container .date{
+  margin-bottom: 10px;
+}
+
+.gender input{
+  margin-bottom: 10px;
+}
+.signup-container .signup{
+  text-decoration: none;
+  padding: 4px 3px 5px;
+  border-radius: 3px;
+  background-color: #008181;
+  color: #e9ebee;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #e9ebee;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 800;
+  text-align: center;
+  width: 50%;
+  margin-top: 10px;
+}
+.signup-container .terms a{
+  text-decoration: none;
+  color: #008181;
+}
+.signup-container .terms a:hover{
+  text-decoration: underline;
+}
+.signup-container .signup:hover{
+  color: #fff;
+}
+
+
+
